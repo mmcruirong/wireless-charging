@@ -20,61 +20,61 @@ void loop() {
     digitalWrite(40,HIGH);
     delayMicroseconds(245);                     // wait for a second
    }
-  digitalWrite(36, LOW);  // 0 Header for stop charging 0x02
+  digitalWrite(36, LOW);  // 0 Header for stop charging
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   // 0
+  digitalWrite(36, HIGH);   // 0 LSB
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(490);
+  digitalWrite(36, LOW);   // 1
+  digitalWrite(38,LOW);
+  digitalWrite(40,LOW);
+  delayMicroseconds(245);
+  digitalWrite(36, HIGH);   
+  digitalWrite(38,HIGH);
+  digitalWrite(40,HIGH);
+  delayMicroseconds(245);
   digitalWrite(36, LOW);   // 0
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   //0
-  digitalWrite(38,HIGH);
-  digitalWrite(40,HIGH);
-  delayMicroseconds(490);
-  digitalWrite(36, LOW);   // 0
-  digitalWrite(38,LOW);
-  digitalWrite(40,LOW);
-  delayMicroseconds(490);
-  digitalWrite(36, HIGH);   // 0
+  digitalWrite(36, HIGH);   // 0 2
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);  
   delayMicroseconds(490);
+  digitalWrite(36,LOW);   //0
+  digitalWrite(38,LOW);
+  digitalWrite(40,LOW);
+  delayMicroseconds(490);
+  digitalWrite(36,HIGH);   //0
+  digitalWrite(38,HIGH);
+  digitalWrite(40,HIGH);
+  delayMicroseconds(490);
   digitalWrite(36, LOW);   //0
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   //1
-  digitalWrite(38,HIGH);
-  digitalWrite(40,HIGH);
-  delayMicroseconds(245);
-  digitalWrite(36, LOW);   //1
-  digitalWrite(38,LOW);
-  digitalWrite(40,LOW);
-  delayMicroseconds(245);
-  digitalWrite(36, HIGH);   // 0
+  digitalWrite(36, HIGH);   // 0 0
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(490);  
-  digitalWrite(36, LOW);   //0
+  digitalWrite(36, LOW);   //0 parity
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   //1
+  digitalWrite(36, HIGH);   //1 stop
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(245);
-  digitalWrite(36, LOW);   //1
+  digitalWrite(36, LOW);    
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(245); 
 
    
-  digitalWrite(36, HIGH);   // 0 Data 0x04
+  digitalWrite(36, HIGH);   // 0 Data 
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(490);
@@ -86,7 +86,15 @@ void loop() {
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(490);
-  digitalWrite(36, LOW);   //0
+  digitalWrite(36, LOW);   //1
+  digitalWrite(38,LOW);
+  digitalWrite(40,LOW);
+  delayMicroseconds(245);
+  digitalWrite(36, HIGH);   
+  digitalWrite(38,HIGH);
+  digitalWrite(40,HIGH);
+  delayMicroseconds(245);
+  digitalWrite(36, LOW);   //0 4
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
@@ -98,35 +106,28 @@ void loop() {
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   // 1
-  digitalWrite(38,HIGH);
-  digitalWrite(40,HIGH);
-  delayMicroseconds(245);
-  digitalWrite(36, LOW);   //1
-  digitalWrite(38,LOW);
-  digitalWrite(40,LOW);
-  delayMicroseconds(245);
   digitalWrite(36, HIGH);   //0
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(490);
-  digitalWrite(36, LOW);   //0
+  digitalWrite(36, LOW);   //0 0
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   // 0
+  digitalWrite(36, HIGH);   // 0 parity 
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(490);  
-  digitalWrite(36, LOW);   //1
+  digitalWrite(36, LOW);   //1 stop
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(245);
-  digitalWrite(36, HIGH);   //1
+  digitalWrite(36, HIGH);   
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(245);
- 
+
+  
   digitalWrite(36, LOW);   // 0 Checksum
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
@@ -139,34 +140,34 @@ void loop() {
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(490);
-  digitalWrite(36, HIGH);   //0
-  digitalWrite(38,HIGH);
-  digitalWrite(40,HIGH);
-  delayMicroseconds(490);
-  digitalWrite(36, LOW);   // 0
-  digitalWrite(38,LOW);
-  digitalWrite(40,LOW);
-  delayMicroseconds(490);
-  digitalWrite(36, HIGH);   // 0
-  digitalWrite(38,HIGH);
-  digitalWrite(40,HIGH);
-  delayMicroseconds(490);
-  digitalWrite(36, LOW);   //1
-  digitalWrite(38,LOW);
-  digitalWrite(40,LOW);
-  delayMicroseconds(245);
   digitalWrite(36, HIGH);   //1
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(245);
-  digitalWrite(36, LOW);   //1
+  digitalWrite(36, LOW);  
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(245);
   digitalWrite(36, HIGH);   // 1
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
-  delayMicroseconds(245);  
+  delayMicroseconds(245);
+  digitalWrite(36, LOW);  
+  digitalWrite(38,LOW);
+  digitalWrite(40,LOW);
+  delayMicroseconds(245);
+  digitalWrite(36, HIGH);  //0  
+  digitalWrite(38,HIGH);
+  digitalWrite(40,HIGH);
+  delayMicroseconds(490);
+  digitalWrite(36, LOW);   //0
+  digitalWrite(38,LOW);
+  digitalWrite(40,LOW);
+  delayMicroseconds(490);
+  digitalWrite(36, HIGH);   // 0
+  digitalWrite(38,HIGH);
+  digitalWrite(40,HIGH);
+  delayMicroseconds(490);  
   digitalWrite(36, LOW);   //0
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
@@ -179,12 +180,17 @@ void loop() {
   digitalWrite(38,LOW);
   digitalWrite(40,LOW);
   delayMicroseconds(245);
-  digitalWrite(36, HIGH);   //1
+  digitalWrite(36, HIGH);   
   digitalWrite(38,HIGH);
   digitalWrite(40,HIGH);
   delayMicroseconds(245);
-  digitalWrite(36, LOW);
+  digitalWrite(36, LOW); //1
   digitalWrite(38,LOW);
-  digitalWrite(40,LOW);   
+  digitalWrite(40,LOW);  
+  delayMicroseconds(245);
+  digitalWrite(36, HIGH);   
+  digitalWrite(38,HIGH);
+  digitalWrite(40,HIGH);
+  delayMicroseconds(245);
   //delayMicroseconds(1000);
 }
